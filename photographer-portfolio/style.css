@@ -16,7 +16,7 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/inter-v12-latin_cyrillic-700.eot');
+  src: url('./assets/fonts/inter-v12-latin_cyrillic-700.eot');
   src: local(''),
        url('./assets/fonts/inter-v12-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'),
        url('./assets/fonts/inter-v12-latin_cyrillic-700.woff2') format('woff2'),
@@ -48,6 +48,23 @@
        url('./assets/fonts/merriweather-v30-latin_cyrillic-700.woff') format('woff'), 
        url('./assets/fonts/merriweather-v30-latin_cyrillic-700.ttf') format('truetype'),  
        url('./assets/fonts/merriweather-v30-latin_cyrillic-700.svg#Merriweather') format('svg'); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+:root {
+  --font-h1:700 normal 60px Merriweather;
+  --font-h2:700 normal 40px Merriweather;
+  font-size: 20px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, 'sans-serif';
+  background-color: black;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -57,6 +74,7 @@
   background-position: center 0;
   display: flex;
   align-items: center;
+  padding: 20px 0;
 }
 .nav {
   font: 400 normal 20px Inter;
@@ -68,13 +86,132 @@
   text-decoration: none;
   color: white;
 }
+.nav-link:hover {
+  color: #BDAE82;
+}
 .menu {
   margin-left: auto;
 }
 .logo {
   width: 50px;
   height: 50px;
+  fill: white;
+}
+.logo:hover {
+  fill: #BDAE82;
 }
 .header-lang {
-  font: 700 normal 20px Inter;
+  font-weight: bold;
+  color: white;
+}
+.active {
+  color: #BDAE82;
+}
+.hero-container {
+  position: relative;
+  background: url('./assets/images/bg.jpg') no-repeat;
+  background-position: center -90px;
+  height: 910px;
+}
+.hero-text {
+  position: absolute;
+  top: 18%;
+  left: 2.7%;
+  max-width: 500px;
+  color: white;
+  line-height: 40px;
+}
+.hero-title {
+  font: var(--font-h1);
+  line-height: 120px;
+  padding-bottom: 10px;
+}
+.hero-text p {
+  padding-bottom: 25px;
+}
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
+  height: 55px;
+  width: 220px;
+}
+.btn-gold {
+  background-color: #BDAE82;
+}
+.btn-gold:hover {
+  color: white;
+}
+.heading {
+  background:linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+  background-position: center -45px;
+  width: calc(50%);
+  margin: 0 auto;
+}
+.section-title {
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+  padding: 0 20px 60px;
+  font: var(--font-h2);
+  color: #BDAE82;
+  background: black;
+}
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill-item {
+  align-items: center;
+  height: 320px;
+  width: 240px;
+  color: white;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.skill-item:nth-child(1) {
+  background-image: url(./assets/svgs/camera.svg);
+}
+.skill-item:nth-child(2) {
+  background-image: url(./assets/svgs/video.svg);
+}
+.skill-item:nth-child(3) {
+  background-image: url(./assets/svgs/image.svg);
+}
+.skill-item:nth-child(4) {
+  background-image: url(./assets/svgs/mic.svg);
+}
+.skill-text {
+  margin-top: 50px;
+  text-align: center;
+}
+.skill-title {
+  font-size: 20px;
+  padding: 50px 0px 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-bottom: 60px ;
+}
+.btn-black {
+  background-color: black;
+  color: #BDAE82;
+  border: 1px solid #BDAE82;
+}
+.btn-black:hover {
+  color: white;
+}
+.btn-black.active {
+  background-color: #BDAE82;
+  color: white;
+}
+.portfolio-images {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  justify-content: space-around;
 }
