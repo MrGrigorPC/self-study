@@ -5,14 +5,11 @@
   font-weight: 400;
   src: url("./assets/fonts/inter-v12-latin_cyrillic-regular.eot");
   src: local(""),
-    url("./assets/fonts/inter-v12-latin_cyrillic-regular.eot?#iefix")
-      format("embedded-opentype"),
+    url("./assets/fonts/inter-v12-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
     url("./assets/fonts/inter-v12-latin_cyrillic-regular.woff2") format("woff2"),
     url("./assets/fonts/inter-v12-latin_cyrillic-regular.woff") format("woff"),
-    url("./assets/fonts/inter-v12-latin_cyrillic-regular.ttf")
-      format("truetype"),
-    url("./assets/fonts/inter-v12-latin_cyrillic-regular.svg#Inter")
-      format("svg");
+    url("./assets/fonts/inter-v12-latin_cyrillic-regular.ttf") format("truetype"),
+    url("./assets/fonts/inter-v12-latin_cyrillic-regular.svg#Inter") format("svg");
 }
 
 /* inter-700 - latin_cyrillic */
@@ -22,8 +19,7 @@
   font-weight: 700;
   src: url("./assets/fonts/inter-v12-latin_cyrillic-700.eot");
   src: local(""),
-    url("./assets/fonts/inter-v12-latin_cyrillic-700.eot?#iefix")
-      format("embedded-opentype"),
+    url("./assets/fonts/inter-v12-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
     url("./assets/fonts/inter-v12-latin_cyrillic-700.woff2") format("woff2"),
     url("./assets/fonts/inter-v12-latin_cyrillic-700.woff") format("woff"),
     url("./assets/fonts/inter-v12-latin_cyrillic-700.ttf") format("truetype"),
@@ -37,16 +33,11 @@
   font-weight: 400;
   src: url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.eot");
   src: local(""),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.woff2")
-      format("woff2"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.woff")
-      format("woff"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.ttf")
-      format("truetype"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.svg#Merriweather")
-      format("svg");
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.woff2") format("woff2"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.woff") format("woff"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.ttf") format("truetype"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-regular.svg#Merriweather") format("svg");
 }
 
 /* merriweather-700 - latin_cyrillic */
@@ -56,16 +47,11 @@
   font-weight: 700;
   src: url("./assets/fonts/merriweather-v30-latin_cyrillic-700.eot");
   src: local(""),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.woff2")
-      format("woff2"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.woff")
-      format("woff"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.ttf")
-      format("truetype"),
-    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.svg#Merriweather")
-      format("svg");
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.woff2") format("woff2"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.woff") format("woff"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.ttf") format("truetype"),
+    url("./assets/fonts/merriweather-v30-latin_cyrillic-700.svg#Merriweather") format("svg");
 }
 
 * {
@@ -184,13 +170,11 @@ button {
 
 .heading {
   padding-top: 100px;
-  background: linear-gradient(
-    to top,
-    #000 39px,
-    #bdae82 39px,
-    #bdae82 41px,
-    #000 41px
-  );
+  background: linear-gradient(to top,
+      #000 39px,
+      #bdae82 39px,
+      #bdae82 41px,
+      #000 41px);
   background-position: center -45px;
   width: calc(50%);
   margin: 0 auto;
@@ -294,4 +278,46 @@ button {
 
 .player-button:hover {
   fill: #bdae82;
+}
+
+.price-items {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding-bottom: 100px;
+}
+
+.price-item {
+  border: 2px solid #bdae82;
+  text-align: center;
+  color: white;
+  width: 450px;
+  height: 505px;
+  padding: 43px;
+}
+
+.price-item p {
+  line-height: 36px;
+}
+
+.price {
+  font: 400 normal 24px Merriweather;
+  color: #bdae82;
+  line-height: 48px;
+  padding: 20px 0px;
+}
+
+.price-title {
+  font: 400 normal 28px Merriweather;
+  line-height: 56px;
+}
+
+.price-button {
+  color: #000;
+  background-color: #bdae82;
+  margin: 40px 0 0 0;
+}
+
+.price-button:hover {
+  color: white;
 }
